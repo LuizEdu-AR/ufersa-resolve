@@ -1,0 +1,1 @@
+export const categories = ['Elétrica e iluminação','Climatização','Hidráulica','Mobiliário','Equipamentos de sala e projetores','Rede/Internet','Limpeza e conservação','Acessibilidade','Estrutura predial','Outros'];
