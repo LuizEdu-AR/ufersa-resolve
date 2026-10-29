@@ -1,6 +1,6 @@
 // OAuth 2.0 Authorization Code + PKCE (public SPA client).
 const CONFIG = {
-  domain: 'https://us-east-18tk4u1lm.auth.us-east-1.amazoncognito.com',
+  domain: 'https://us-east-18tkl4u1lm.auth.us-east-1.amazoncognito.com',
   clientId: '40hkvlmk5fss41v205uh1ctuqg',
   redirectUri: 'https://ufersa-resolve.luizeduardo.zangado.web.ufersa.dev.br/',
   scopes: 'openid email profile',

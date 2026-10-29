@@ -8,7 +8,7 @@ O frontend usa Authorization Code + PKCE, sem client secret. A autenticação é
 - App client (SPA, sem secret): 40hkvlmk5fss41v205uh1ctuqg
 - Callback e sign-out: https://ufersa-resolve.luizeduardo.zangado.web.ufersa.dev.br/
 - OAuth: Authorization code grant; scopes openid, email, profile.
-- O domínio Hosted UI configurado em `src/services/cognitoAuth.js` deve ser confirmado em Cognito > Branding > Domain. Caso seja diferente, substitua `CONFIG.domain` pelo domínio exato exibido no console.
+- Domínio Hosted UI confirmado em Cognito > Branding > Domain: `https://us-east-18tkl4u1lm.auth.us-east-1.amazoncognito.com`. O mesmo valor está configurado em `src/services/cognitoAuth.js`.
 
 ## Como aplicar
 Copie os arquivos deste pacote para os mesmos caminhos no repositório, preservando os demais arquivos. Faça o deploy pelo fluxo atual do Amplify.
