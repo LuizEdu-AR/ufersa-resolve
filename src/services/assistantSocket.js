@@ -1,6 +1,6 @@
 import { getAccessToken } from './cognitoAuth';
 
-const DEFAULT_WS_URL = 'wss://g1j6ueg53j.execute-api.us-east-1.amazonaws.com/prod/';
+const DEFAULT_WS_URL = 'wss://api.luizeduardo.zangado.web.ufersa.dev.br';
 const WS_URL = import.meta.env.VITE_ASSISTANT_WS_URL || DEFAULT_WS_URL;
 
 export async function connectAssistant({ onMessage, onStatus }) {
