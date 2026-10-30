@@ -9,3 +9,19 @@
 .auth-card button { background: #8bcc32; border: 0; border-radius: 8px; padding: 12px 18px; cursor: pointer; font-weight: 700; }
 .logout-button { margin-left: auto; padding: 6px; background: transparent; border: 0; color: inherit; cursor: pointer; display: inline-flex; align-items: center; }
 .logout-button:hover { opacity: .7; }
+
+/* Assistente IA */
+.assistant-panel{background:white;border:1px solid #e3e9e6;border-radius:14px;display:flex;flex-direction:column;min-height:70vh;overflow:hidden}
+.assistant-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px;border-bottom:1px solid #e3e9e6}
+.assistant-header h2{display:flex;align-items:center;gap:9px;margin:0 0 6px;font-size:20px}
+.assistant-header p,.assistant-note{margin:0;color:#71817b;font-size:12px}
+.assistant-status{font-size:11px;font-weight:700;white-space:nowrap;color:#a66d16}
+.assistant-status.connected{color:#287a50}.assistant-status.error,.assistant-status.disconnected{color:#b23a3a}
+.assistant-messages{flex:1;min-height:350px;max-height:60vh;overflow:auto;display:flex;flex-direction:column;gap:14px;padding:24px}
+.assistant-empty{margin:auto;color:#71817b;font-size:14px;text-align:center}
+.assistant-bubble{max-width:85%;padding:14px 17px;border-radius:13px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:1.65;background:#eef4f0;align-self:flex-start}
+.assistant-bubble.user{background:#1d5546;color:white;align-self:flex-end}.assistant-bubble.error{background:#fff0ef;color:#a22}
+.assistant-form{display:flex;gap:12px;padding:15px 24px;border-top:1px solid #e3e9e6;align-items:center}
+.assistant-form textarea{flex:1;resize:vertical;min-width:0;border:1px solid #dce4e1;border-radius:9px;padding:12px;font:13px Inter}
+.assistant-form button:disabled{opacity:.5;cursor:not-allowed}.assistant-note{padding:0 24px 16px}
+@media(max-width:600px){.assistant-header{flex-wrap:wrap}.assistant-bubble{max-width:100%}.assistant-form{padding:12px}}

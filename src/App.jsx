@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useState } from 'react';
 import AppLayout from './components/layout/AppLayout';
 import HomePage from './pages/HomePage';
+import AssistantPage from './pages/AssistantPage';
 import NewRequestPage from './pages/NewRequestPage';
 import MyRequestsPage from './pages/MyRequestsPage';
 import ManagerDashboardPage from './pages/ManagerDashboardPage';
 import TicketDetailsPage from './pages/TicketDetailsPage';
 import { tickets as initialTickets } from './data/tickets';
 
-const pages = { inicio: HomePage, novo: NewRequestPage, meus: MyRequestsPage, painel: ManagerDashboardPage, detalhes: TicketDetailsPage };
+const pages = { assistente: AssistantPage, inicio: HomePage, novo: NewRequestPage, meus: MyRequestsPage, painel: ManagerDashboardPage, detalhes: TicketDetailsPage };
 const STORAGE_KEY = 'ufersa-resolve-tickets';
 
 function routeFromHash() {

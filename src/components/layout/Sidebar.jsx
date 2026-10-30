@@ -1,7 +1,7 @@
-import { Home, PlusCircle, ClipboardList, LayoutDashboard, LogOut } from 'lucide-react';
+import { Home, PlusCircle, ClipboardList, LayoutDashboard, MessageCircle, LogOut } from 'lucide-react';
 import Logo from '../common/Logo';
 import { getUser, logout } from '../../services/cognitoAuth';
-const items=[['inicio','Início',Home],['novo','Abrir solicitação',PlusCircle],['meus','Meus chamados',ClipboardList],['painel','Painel gerencial',LayoutDashboard]];
+const items=[['inicio','Início',Home],['novo','Abrir solicitação',PlusCircle],['meus','Meus chamados',ClipboardList],['painel','Painel gerencial',LayoutDashboard],['assistente','Assistente IA',MessageCircle]];
 export default function Sidebar({ page, onNavigate }){
   const user = getUser();
   const name = user?.name || user?.email?.split('@')[0] || 'Usuário';
